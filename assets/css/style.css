@@ -1974,12 +1974,6 @@ section {
 }
 
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -2016,7 +2010,7 @@ section {
   }
   .team .member span {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     padding-bottom: 10px;
     position: relative;
     font-weight: 500;
@@ -2026,10 +2020,9 @@ section {
     content: "";
     position: absolute;
     display: block;
-    width: 50px;
+    width: 98%;
     height: 1px;
-    background: #ffc451;
-
+    background: #d6c7aa3a;
     bottom: 0;
     right: 0;
   }
@@ -2039,34 +2032,17 @@ section {
     color: rgba(255, 255, 255, 0.623);
     
   }
-  .team .member .social {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  /* .team .member .social a {
-    transition: ease-in-out 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    width: 32px;
-    height: 32px;
-    background: #eff2f8;
-  }
-  .team .member .social a i {
-    color: #fc0;
-    font-size: 16px;
-    margin: 0 2px;
-  }
-  .team .member .social a:hover {
-    background: #47b2e4;
-  }
-  .team .member .social a:hover i {
+
+  .pad-ver-team {
+    padding: 15px 0;
+}
+
+.pad-ver-team a:hover {
+    color: #ffc451;
+}
+
+.pad-ver-team a {
+    border: 1px solid rgba(255, 255, 255, 0.329);
     color: #fff;
-  }
-  .team .member .social a + a {
-    margin-left: 8px;
-  } */
+}
   
