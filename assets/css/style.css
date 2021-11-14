@@ -831,7 +831,6 @@ section {
 }
 
 .services-btn-login:hover {
-    color: #fff !important;
     box-shadow: 0 0 0 0 #ffc451;
 }
 
@@ -839,7 +838,7 @@ section {
     color: #020e14;
 }
 
-.services-btn-login a:hover {
+.services-btn-login:hover a {
     border: none;
     color: #fff;
 }
@@ -879,8 +878,6 @@ section {
 
 .why-us .container {
     background: #020e14;
-    /* border: 1px solid #ffc451;
-  box-shadow: 1px 1px 4px #ffc451; */
     border: 1px solid #03161f;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -888,6 +885,7 @@ section {
 
 .why-us .icon-box+.icon-box {
     margin-top: 50px;
+    
 }
 
 .why-us .icon-box .title {
@@ -1036,114 +1034,122 @@ section {
 }
 
 
+@media (min-width: 1400px) {
+    .why-us .container {
+      width: 75%;
+    }
+}
+
 /*--------------------------------------------------------------
 # mentoring
 --------------------------------------------------------------*/
 
+
+
 .mentoring-btn-login {
-    background-color: #ffc451;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 8px 18px;
-    border: none;
+
+    transition: 0.25s;
+    box-shadow: 0 0 0 0 #ffc451, inset 6em 3.5em 0 0 #ffc451;
     border-radius: 5px;
-    margin-bottom: 55px;
+    border-color: #ffc451;
+    background: none;
+
+    font: inherit;
+    line-height: 1;
+    margin-bottom: 45px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
 }
+
 
 .mentoring-btn-login a {
     color: #020a0f;
 }
 
 .mentoring-btn-login:hover {
-    color: #fff;
-    background-color: rgba(5, 87, 102, 0.76);
+    box-shadow: 0 0 0 0 #ffc451;
 }
 
-.mentors {
+.mentoring-btn-login:hover a {
+    border: none;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# mentoring
+--------------------------------------------------------------*/
+
+.team .member {
+    position: relative;
+    padding: 30px;
+    transition: 0.5s;
     background: #020e14;
     border: 1px solid #03161f;
-    border-radius: 10px !important;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.img-thumbnail {
-    padding: .25rem;
-    background-color: #06151d;
-    border: 1px solid #dee2e6;
-    border-radius: .25rem;
-    max-width: 100%;
-    height: auto;
-}
-
-
-.mentors-name {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-.mentors-position {
-    font-size: 14px;
-    color: #ffc451;
-    margin: 0 0 15px 0;
-}
-
-.mentor-description {
-    padding-top: 25px;
-    font-size: 13px;
-    color: #e6e6e6;
-}
-
-.social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+  }
+  .team .member .pic {
+    overflow: hidden;
+    margin-left: 15px;
+    width: 180px;
     border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
-    text-align: center;
-}
-.mentoring-hr {
-    width: 85%;
-    margin: 10px auto;
-}
-
-.py-5 {
-    padding-bottom: 1rem !important;
-    padding-top: 15px !important;
-}
-
-.rating {
-    margin-top: 20px;
-}
-
-.rating i {
-    color: #fc0
-}
-
-.rating a {
+  }
+  .team .member .pic img {
+    transition: ease-in-out 0.3s;
+  }
+  .team .member:hover {
+    transform: translateY(-10px);
+  }
+  .team .member .member-info {
+    padding-left: 30px;
+  }
+  .team .member h4 {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 20px;
     color: #fff;
+  }
+  .team .member span {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+    color: #ffc451;
+  }
+  .team .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 98%;
+    height: 1px;
+    background: #d6c7aa3a;
+    bottom: 0;
+    right: 0;
+  }
+  .team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.623);
+    
+  }
+
+  .pad-ver-team {
+    padding: 15px 0;
 }
 
-.pad-ver {
-    padding: 15px;
-}
-
-.pad-ver a:hover {
+.pad-ver-team a:hover {
     color: #ffc451;
 }
 
-.pad-ver a {
+.pad-ver-team a {
     border: 1px solid rgba(255, 255, 255, 0.329);
     color: #fff;
 }
-
-
+  
 /*--------------------------------------------------------------
 # Mentoring 2
 --------------------------------------------------------------*/
@@ -1248,14 +1254,15 @@ section {
 .card-category {
     display: inline-block;
     color: #fff;
-    padding: 0 15px 5px;
+    padding: 0 11px 2px;
     overflow: hidden;
-    margin-bottom: 8px;
-    background-color: #ffc451;
+    margin: 8px 0;
+    /* background-color: #ffc451; */
+    border: 1px solid #ffcb63d8;
     border-radius: 4px;
   }
 .card-category .category {
-    color: #020a0f;
+    color: #ffcb63d8;
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
@@ -1272,8 +1279,6 @@ section {
     margin-bottom: 20px;
     border-radius: 5px;
     padding-bottom: 2px;
-    /* border: 1px solid #ffc451;
-  box-shadow: 0 0 3px #ffc451 !important; */
     background: #020e14;
 }
 
@@ -1432,8 +1437,9 @@ section {
 }
 
 .courses .course-content p {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.863);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.712);
+    line-height: 2;
 }
 
 .courses .course-content h4 {
@@ -1962,89 +1968,3 @@ section {
     left: 0px;
     z-index: -1;
 }
-
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-
-.team .member {
-    position: relative;
-    padding: 30px;
-    transition: 0.5s;
-    background: #020e14;
-    border: 1px solid #03161f;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
-  .team .member .pic {
-    overflow: hidden;
-    margin-left: 15px;
-    width: 180px;
-    border-radius: 50%;
-  }
-  .team .member .pic img {
-    transition: ease-in-out 0.3s;
-  }
-  .team .member:hover {
-    transform: translateY(-10px);
-  }
-  .team .member .member-info {
-    padding-left: 30px;
-  }
-  .team .member h4 {
-    font-weight: 700;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: #fff;
-  }
-  .team .member span {
-    display: block;
-    font-size: 13px;
-    padding-bottom: 10px;
-    position: relative;
-    font-weight: 500;
-    color: #ffc451;
-  }
-  .team .member span::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 98%;
-    height: 1px;
-    background: #d6c7aa3a;
-    bottom: 0;
-    right: 0;
-  }
-  .team .member p {
-    margin: 10px 0 0 0;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.623);
-    
-  }
-
-  .pad-ver-team {
-    padding: 15px 0;
-}
-
-.pad-ver-team a:hover {
-    color: #ffc451;
-}
-
-.pad-ver-team a {
-    border: 1px solid rgba(255, 255, 255, 0.329);
-    color: #fff;
-}
-  
-
-
-
-
-
-
-
-
-
-
-
- 
