@@ -1243,6 +1243,7 @@ section {
 }
 
 
+
 /*--------------------------------------------------------------
 # bschool
 --------------------------------------------------------------*/
@@ -1278,6 +1279,24 @@ section {
     color: rgba(255, 255, 255, 0.863);
 }
 
+.card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #ffc451;
+    border-radius: 4px;
+  }
+.card-category .category {
+    color: #020a0f;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
 /*------------------------------------*\
 	Courses
 \*------------------------------------*/
@@ -1402,7 +1421,12 @@ section {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.507);
 }
-
+.post-date {
+    color: #ffc451;
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+  }
 @media only screen and (max-width: 480px) {
 
     /*-- Courses --*/
@@ -1467,7 +1491,7 @@ section {
 }
 
 .courses .trainer .trainer-profile img {
-    max-width: 50px;
+    max-width: 40px;
     border-radius: 50px;
 }
 
@@ -2046,3 +2070,15 @@ section {
     color: #fff;
 }
   
+
+
+
+
+
+
+
+
+
+
+
+ 
