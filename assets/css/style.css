@@ -730,8 +730,6 @@ section {
     position: relative;
     overflow: hidden;
     margin: 0 0 40px 0;
-    /* border: 1px solid #ffc451;
-  box-shadow: 1px 1px 4px #ffc451; */
     border: 1px solid #03161f;
     box-shadow: 1px 1px 4px #3d3d3d63;
     background: #020e14;
@@ -741,17 +739,6 @@ section {
 }
 
 
-/* 
-.services .icon-box:hover .icon {
-    border: 2px dotted #ffc451;
-    border-radius: 50%;
-} */
-
-
-/*.services .icon-box:hover .icon i {
-  color: #fff;
-}*/
-
 .services .icon {
     margin: 0 auto 20px auto;
     padding-top: 17px;
@@ -760,6 +747,7 @@ section {
     border-radius: 50%;
     width: 72px;
     height: 72px;
+    border: 1px solid;
 }
 
 .services .icon i {
