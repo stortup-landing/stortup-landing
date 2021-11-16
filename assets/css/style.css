@@ -977,7 +977,6 @@ section {
     animation: none;
     border-radius: 0;
 }
-
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
@@ -1183,18 +1182,18 @@ section {
     line-height: 2;
 
   }
-  .testimonials .swiper-pagination {
+    .swiper-pagination {
     margin-top: 20px;
     position: relative;
   }
-  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
     opacity: 1;
     border: 1px solid #ffc451;
   }
-  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #ffc451;
   }
   .description {
