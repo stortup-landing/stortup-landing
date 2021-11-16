@@ -368,9 +368,6 @@ hr {
     position: relative;
     filter: brightness(1.05);
     /* box-shadow: 0 0 10px #03090c; */
-    background-size: 100% 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
 }
 
 #hero::after {
@@ -378,14 +375,15 @@ hr {
     position: absolute;
     left: 50%;
     top: 0;
-    width: 100%;
-    height: 100vh;
+    width: 130%;
+    height: 95%;
     background: linear-gradient(215deg, #0b212d, #144f64);
-    background: linear-gradient(180deg, rgba(2,14,20,0.5), rgba(4,18,25,0.9));
+    background: linear-gradient(90deg, #020a0f, #052738);
     z-index: 0;
-    /*border-radius: 0 0 35% 35%;*/
+    border-radius: 0 0 35% 35%;
     transform: translateX(-50%) rotate(0deg);
 }
+
 
 
 /* #hero::before {
