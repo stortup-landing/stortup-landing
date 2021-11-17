@@ -625,12 +625,14 @@ section {
     padding-bottom: 30px;
 }
 
+
 .section-title h2 {
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+    
 }
 
 .section-title h2::before {
@@ -657,6 +659,25 @@ section {
 
 .section-title p {
     margin-bottom: 0;
+}
+
+
+
+.section-topic {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.section-topic h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    border-bottom: 2px solid #ffc551af;
+    width: 60%;
+    margin: 0 auto;
 }
 
 
