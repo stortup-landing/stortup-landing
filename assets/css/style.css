@@ -632,10 +632,13 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+    border-bottom: 1px solid #ffc551af;
+    width: 28%;
+    margin: 0 auto;
     
 }
 
-.section-title h2::before {
+/* .section-title h2::before {
     content: "";
     position: absolute;
     display: block;
@@ -655,7 +658,7 @@ section {
     background: #ffc451;
     bottom: 0;
     left: calc(50% - 20px);
-}
+} */
 
 .section-title p {
     margin-bottom: 0;
@@ -675,7 +678,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    border-bottom: 2px solid #ffc551af;
+    border-bottom: 1px solid #ffc551af;
     width: 60%;
     margin: 0 auto;
 }
