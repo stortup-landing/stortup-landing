@@ -622,19 +622,18 @@ section {
 
 .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 
 .section-title h2 {
     font-size: 28px;
     font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 5px;
     position: relative;
-    border-bottom: 1px solid #ffc551af;
+    /* border-bottom: 1px solid #ffc551af;
     width: 28%;
-    margin: 0 auto;
+    margin: 0 auto; */
     
 }
 
@@ -661,7 +660,7 @@ section {
 } */
 
 .section-title p {
-    margin-bottom: 0;
+    margin-bottom: 35px;
 }
 
 
@@ -675,15 +674,23 @@ section {
 .section-topic h2 {
     font-size: 28px;
     font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
     position: relative;
-    border-bottom: 1px solid #ffc551af;
+    /* border-bottom: 1px solid #ffc551af;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
-
-
+.hr-topic{
+width: 60%;
+background-color: #fdac09 !important;
+padding: 1px;
+}
+.hr-title{
+    width: 25%;
+    background-color: #fdac09 !important;
+    padding: 1px;
+    }
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -745,7 +752,7 @@ section {
 #services-heading {
     color: #ffc451;
     text-align: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-weight: 700;
     font-size: 35px;
 }
