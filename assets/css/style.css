@@ -1664,6 +1664,11 @@ padding: 1px;
     bottom: 15px;
 }
 
+.img-fluid-about{
+        max-width: 100%;
+        height: auto;
+        margin-top: -50px !important;
+}
 
 /*--------------------------------------------------------------
 # Contact
